@@ -1,0 +1,15 @@
+{
+    // Live Server 监听配置
+    "liveServer.settings.port": 5500,
+    "liveServer.settings.host": "127.0.0.1",
+    "liveServer.settings.root": "/",
+
+    // 自动打开浏览器：直接指定本机 Chrome 的完整路径（最可靠）
+    "liveServer.settings.CustomBrowser": "chrome",
+    "liveServer.settings.AdvanceCustomBrowserCmdLine": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+    "liveServer.settings.NoBrowser": false,
+
+    // 始终显示服务器启动信息，方便排查
+    "liveServer.settings.donotShowInfoMsg": false,
+    "liveServer.settings.donotVerifyTags": true
+}

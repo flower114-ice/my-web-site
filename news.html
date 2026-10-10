@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>演出资讯 · 中国豫剧</title>
+    <style>
+        body {
+            font-family: "微软雅黑", sans-serif;
+            margin: 0;
+            color: #1F2937;
+            background: #F5EFEA;
+        }
+
+        .wrap {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #fff;
+            min-height: 90vh;
+        }
+
+        h1 {
+            color: #8B0000;
+            font-family: "STXingkai", "华文行楷", "STLiti", "华文隶书",
+                         "LiSu", "隶书", "KaiTi", "楷体", serif;
+            font-size: 44px;
+            font-weight: normal;
+            letter-spacing: 8px;
+            text-shadow: 1px 1px 2px rgba(139, 0, 0, 0.18);
+        }
+
+        h2 {
+            color: #8B0000;
+            border-left: 6px solid #8B0000;
+            padding-left: 10px;
+            margin-top: 34px;
+        }
+
+        hr {
+            border: none;
+            border-top: 2px solid #E8C9C9;
+            margin: 12px 0 20px;
+        }
+
+        .menu {
+            list-style: none;
+            margin: 0 0 16px;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            background: #8B0000;
+            border-radius: 4px;
+        }
+
+        .menu li {
+            margin: 0;
+        }
+
+        .menu a {
+            display: block;
+            padding: 12px 22px;
+            color: #FFF5F5;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .menu a:hover,
+        .menu a:focus {
+            background: #B91C1C;
+            color: #FFE9B8;
+        }
+
+        /* 顶部图片链接：缩略图点击打开大图 */
+        .poster {
+            text-align: center;
+            margin: 0 0 4px;
+        }
+
+        .poster img {
+            border: 3px solid #8B0000;
+            border-radius: 4px;
+            display: inline-block;
+        }
+
+        .poster .tip {
+            display: block;
+            font-size: 13px;
+            color: #6B7280;
+            margin-top: 6px;
+        }
+
+        /* 目录（锚点导航） */
+        .toc {
+            background: #FDF6F1;
+            border: 1px solid #E8C9C9;
+            border-radius: 4px;
+            padding: 14px 14px 14px 36px;
+            line-height: 2;
+        }
+
+        .toc a {
+            color: #8B0000;
+            text-decoration: none;
+        }
+
+        .toc a:hover {
+            text-decoration: underline;
+        }
+
+        /* 定义列表 */
+        dl {
+            background: #FDF6F1;
+            border-left: 4px solid #C9A227;
+            padding: 12px 16px;
+            margin: 12px 0;
+        }
+
+        dt {
+            color: #8B0000;
+            font-weight: bold;
+            margin-top: 8px;
+        }
+
+        dd {
+            margin: 4px 0 8px 24px;
+        }
+
+        .back {
+            font-size: 14px;
+            margin-top: 28px;
+        }
+
+        .back a {
+            color: #8B0000;
+            margin-right: 14px;
+        }
+
+        footer {
+            margin-top: 24px;
+            padding-top: 12px;
+            border-top: 1px solid #E5E7EB;
+            font-size: 14px;
+            color: #6B7280;
+        }
+
+        footer a {
+            color: #8B0000;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap" id="top">
+        <h1>中国豫剧</h1>
+
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="about.html">豫剧简介</a></li>
+                <li><a href="news.html">演出资讯</a></li>
+                <li><a href="index.html#shows">本周演出</a></li>
+                <li><a href="mailto:yuju@example.com">联系我们</a></li>
+            </ul>
+        </nav>
+
+        <hr>
+
+        <!-- 顶部图片链接：缩略图点击打开大图 -->
+        <p class="poster">
+            <a href="images/tupian.jpg" title="点击查看豫剧演出宣传大图">
+                <img src="images/tupian.jpg" alt="点击查看大图" width="240" height="168">
+            </a>
+            <span class="tip">点击上方缩略图可打开大图</span>
+        </p>
+
+        <h2>本期目录</h2>
+        <ol class="toc">
+            <li><a href="#item1">名家专场：河南豫剧院一团《穆桂英挂帅》</a></li>
+            <li><a href="#item2">演出日程与票价说明</a></li>
+            <li><a href="#item3">青年演员擂台赛报名须知</a></li>
+            <li><a href="#item4">唱腔传习班招生简讯</a></li>
+        </ol>
+
+        <h2 id="item1">第一条 · 名家专场《穆桂英挂帅》</h2>
+        <p>
+            河南豫剧院一团本月将携马派经典剧目《穆桂英挂帅》亮相郑州大剧院，
+            由梅花奖获得者领衔主演，完整呈现“辕门外三声炮如同雷震”等经典唱段。
+            本场演出为豫剧进校园系列活动开幕式专场，面向高校师生开放优惠票。
+        </p>
+        <p>
+            <a href="#top">↑ 返回顶部</a>
+        </p>
+
+        <h2 id="item2">第二条 · 演出日程与票价说明</h2>
+        <p>以下为本轮巡演的各场次安排（使用定义列表说明时间、地点与票价）：</p>
+        <dl>
+            <dt>《穆桂英挂帅》</dt>
+            <dd>时间：2026 年 10 月 18 日 19:30</dd>
+            <dd>地点：郑州大剧院 · 大剧场</dd>
+            <dd>票价：学生票 60 元，普通票 120 元 / 180 元</dd>
+
+            <dt>《花木兰》常派折子戏专场</dt>
+            <dd>时间：2026 年 10 月 22 日 19:00</dd>
+            <dd>地点：开封清明上河园 · 宣德殿戏楼</dd>
+            <dd>票价：统一 80 元（含园区夜间游览）</dd>
+
+            <dt>《朝阳沟》现代戏进校园</dt>
+            <dd>时间：2026 年 10 月 26 日 15:00</dd>
+            <dd>地点：洛阳师范学院 · 大学生活动中心</dd>
+            <dd>票价：免费（凭学生证入场）</dd>
+        </dl>
+        <p>
+            <a href="#top">↑ 返回顶部</a>
+        </p>
+
+        <h2 id="item3">第三条 · 青年演员擂台赛报名须知</h2>
+        <dl>
+            <dt>报名条件</dt>
+            <dd>年龄 16 至 35 周岁，戏曲院校在校生或院团青年演员均可报名。</dd>
+
+            <dt>比赛内容</dt>
+            <dd>自选豫剧唱段一首（不超过 8 分钟），另加基本功展示。</dd>
+
+            <dt>报名方式与截止时间</dt>
+            <dd>请将报名表发送至 yuju@example.com，截止日期 2026 年 10 月 31 日。</dd>
+        </dl>
+        <p>
+            <a href="#top">↑ 返回顶部</a>
+        </p>
+
+        <h2 id="item4">第四条 · 唱腔传习班招生简讯</h2>
+        <p>为配合“豫剧进校园”工程，本期传习班开设三类课程：</p>
+        <ul>
+            <li>唱腔基础：气息、发声与豫东调、豫西调基本音调</li>
+            <li>身段基本功：台步、圆场、水袖与亮相</li>
+            <li>锣鼓经与板式：慢板、二八板、流水板的辨识与配合</li>
+        </ul>
+        <p>
+            <a href="#top">↑ 返回顶部</a>
+        </p>
+
+        <p class="back">
+            <a href="index.html">← 返回首页</a>
+            <a href="#top">↑ 返回顶部</a>
+        </p>
+
+        <footer>
+            <p>联系我们：<a href="mailto:yuju@example.com">yuju@example.com</a></p>
+            <p>© 2026 中国豫剧 · Web 编程基础课程实验</p>
+        </footer>
+    </div>
+</body>
+
+</html>

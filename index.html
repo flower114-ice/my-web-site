@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>中国豫剧</title>
+    <style>
+        body {
+            font-family: "微软雅黑", sans-serif;
+            margin: 0;
+            color: #1F2937;
+            background: #F5EFEA;
+        }
+
+        .wrap {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #fff;
+            min-height: 90vh;
+        }
+
+        h1 {
+            /* 深红 + 书法体：华文行楷优先，逐级回退到隶书、楷体 */
+            color: #8B0000;
+            font-family: "STXingkai", "华文行楷", "STLiti", "华文隶书",
+                         "LiSu", "隶书", "KaiTi", "楷体", serif;
+            font-size: 44px;
+            font-weight: normal;
+            letter-spacing: 8px;
+            text-shadow: 1px 1px 2px rgba(139, 0, 0, 0.18);
+        }
+
+        h2 {
+            color: #8B0000;
+            border-left: 6px solid #8B0000;
+            padding-left: 10px;
+        }
+
+        hr {
+            border: none;
+            border-top: 2px solid #E8C9C9;
+            margin: 12px 0 20px;
+        }
+
+        /* TODO(任务A第2步): 在这里补充 .menu 导航条样式 */
+        .menu {
+            list-style: none;
+            margin: 0 0 16px;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            background: #8B0000;
+            border-radius: 4px;
+        }
+
+        .menu li {
+            margin: 0;
+        }
+
+        .menu a {
+            display: block;
+            padding: 12px 22px;
+            color: #FFF5F5;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .menu a:hover,
+        .menu a:focus {
+            background: #B91C1C;
+            color: #FFE9B8;
+        }
+
+        footer {
+            margin-top: 40px;
+            padding-top: 12px;
+            border-top: 1px solid #E5E7EB;
+            font-size: 14px;
+            color: #6B7280;
+        }
+
+        footer a {
+            color: #8B0000;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <h1>中国豫剧</h1>
+
+        <!-- TODO(任务A第2步): 在这里加上 <nav><ul class="menu">...</ul></nav> 导航条 -->
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="introduce.html">豫剧简介</a></li>
+                <li><a href="news.html">演出资讯</a></li>
+                <li><a href="#shows">本周演出</a></li>
+                <li><a href="mailto:yuju@example.com">联系我们</a></li>
+            </ul>
+        </nav>
+
+        <hr>
+
+        <h2>豫剧简介</h2>
+        <p>
+            豫剧，又称“河南梆子”，是中国五大戏曲剧种之一，也是流传最广的地方戏。
+            它以中州音韵为基础，唱腔铿锵大气、抑扬有度，擅长以质朴的语言表现人物的喜怒哀乐。
+            2006 年，豫剧被列入第一批国家级非物质文化遗产名录。
+        </p>
+        <ul>
+            <li><strong>唱腔</strong>：主要有豫东调、豫西调两大流派，另有祥符调、沙河调等支派。</li>
+            <li><strong>板式</strong>：以慢板、二八板、流水板、散板为基本板式，节奏变化丰富。</li>
+            <li><strong>伴奏</strong>：以板胡为主奏乐器，配以梆子、大锣、小锣、鼓板。</li>
+            <li><strong>行当</strong>：生、旦、净、丑四行齐全，尤以旦角与黑头戏见长。</li>
+        </ul>
+
+        <h2 id="shows">本周演出安排</h2>
+        <!-- 任务A第3步：周一到周五 的混合嵌套列表（有序 + 无序，含第三层） -->
+        <ol>
+            <li>
+                周一 · 《朝阳沟》现代戏专场
+                <ul>
+                    <li>时间：19:30 开场，时长约 2 小时</li>
+                    <li>地点：郑州大剧院 · 大剧场</li>
+                    <li>票价：学生票 60 元，普通票 120 元起</li>
+                </ul>
+            </li>
+            <li>
+                周二 · 名家名段演唱会
+                <ul>
+                    <li>常派唱段：《花木兰》“谁说女子不如男”</li>
+                    <li>马派唱段：《穆桂英挂帅》“辕门外三声炮”</li>
+                    <li>阎派唱段：《秦雪梅》“观文”选段</li>
+                </ul>
+            </li>
+            <li>
+                周三 · 传统折子戏专场
+                <ul>
+                    <li>
+                        下午场 · 折子戏三出
+                        <ul>
+                            <li>《拷红》：念白俏丽，做工见长</li>
+                            <li>《抬花轿》：欢快喜庆，吹打并重</li>
+                            <li>《花打朝》：泼辣旦的经典之作</li>
+                        </ul>
+                    </li>
+                    <li>晚场：青年演员基本功展示（水袖、毯子功、把子功）</li>
+                </ul>
+            </li>
+            <li>
+                周四 · 豫剧进校园巡演
+                <ul>
+                    <li>15:00 洛阳师范学院 · 大学生活动中心</li>
+                    <li>19:00 河南大学 · 音乐学院音乐厅</li>
+                    <li>免费入场，凭学生证领取门票</li>
+                </ul>
+            </li>
+            <li>
+                周五 · 青年演员擂台赛
+                <ul>
+                    <li>初赛：自选唱段，限时 8 分钟</li>
+                    <li>评委现场点评并打分</li>
+                    <li>决赛名单与颁奖结果当晚公布</li>
+                </ul>
+            </li>
+        </ol>
+
+        <footer>
+            <!-- TODO(任务A第2步): 这里加 mailto 邮件链接 -->
+            <p>联系我们：<a href="mailto:yuju@example.com">yuju@example.com</a></p>
+            <p>© 2026 中国豫剧 · Web 编程基础课程实验</p>
+        </footer>
+    </div>
+</body>
+
+</html>
